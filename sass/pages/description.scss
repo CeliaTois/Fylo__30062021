@@ -1,0 +1,84 @@
+/* Section 2 : Description */
+#description {
+    background: url("../../images/bg-curve-mobile.svg") no-repeat;
+    background-size: 750% 100%; /* width height */
+    background-position-x: center;
+    padding: 93px map-get($map: $margin-phone, $key: body) 80px;
+    &__image {
+        & img {
+            width: 100%;
+        }
+    }
+    &__text {
+        & h2 {
+            font-family: $h2-font;
+            font-size: 1.5rem;
+            margin: 85px 0 27px;
+            text-align: center;
+        }
+        & .text {
+            color: hsl(238, 22%, 44%);
+            line-height: map-get($map: $p-height, $key: mobile);
+            margin-bottom: 18px;
+        }
+        &__link {
+            display: flex;
+            align-items: flex-end;
+            border-bottom: 1px $link-clr solid; /* Bottom border */
+            padding-bottom: 5px; /* Space between text and bottom border */
+            width: fit-content; /* Border's width = text + image */
+            margin: 37px auto; /* Center the div */
+            color: $link-clr;
+            cursor: pointer;
+            &:hover {
+                color: $link-clr-hover;
+                border-bottom: 1px $link-clr-hover solid;
+            }
+            & p {
+                margin: 0 10px 0 0;
+                font-size: 1.2rem;
+            }
+            &__arrow {
+                width: 16px;
+                height: auto;
+            }
+        }
+    }
+    &__review {
+        padding: 20px 24px 22px;
+        margin: 40px 22px 0;
+        background-color: #fff;
+        border-radius: $border-radius;
+        box-shadow: 0 0 20px $placeholder-color;
+        &__quotes {
+            width: 14px;
+            height: auto;
+        }
+        &__text {
+            font-size: 1.05rem;
+            margin-top: 2px;
+            line-height: 1.8rem;
+        }
+        &__person {
+            display: flex;
+            align-items: center;
+            & img {
+                width: 25px;
+                border-radius: 25px;
+                float: left;
+            }
+            &__infos {
+                margin-left: 10px;
+                & #name {
+                    margin: 0 0 2px;
+                    font-family: $h2-font;
+                    font-size: 1rem;
+                }
+                & #profession {
+                    margin: 0;
+                    font-size: 0.7rem;
+                }
+            }        
+        }     
+    }
+}

@@ -1,13 +1,30 @@
 /* Font-family */
 $nav-font: Raleway-Regular;
-$h1-font: (phones: OpenSans-Bold, tablet-desktop: Raleway-Bold);
+$h1-font: (phone: OpenSans-Bold, tablet-desktop: Raleway-Bold);
 $h2-font: Raleway-Bold;
 $p-font: OpenSans-Regular;
 $input-font: Raleway-Regular;
 $btn-font: Raleway-Bold;
 
+/* Font-size */
+
 /* Margins & Paddings */
-$margin: (body: 25px);
+$margin-phone: (body: 25px, presentation: 35px);
 
 /* Colors */
 $main-color: hsl(243, 87%, 12%);
+$placeholder-color: hsl(0, 0%, 75%);
+$error-clr: #eb9393;
+$btn-color: #FFF;
+$btn-background: hsl(224, 93%, 58%);
+$btn-background-hover: #6B9BFF;
+$link-clr: hsl(170, 45%, 43%);
+$link-clr-hover: hsl(169, 74%, 54%);
+
+/* Border-radius */
+$border-radius: 3px;
+
+/* Height */
+$input-height: (mobile: 36px, desktop: 60px);
+$btn-height: (mobile: 40px);
+$p-height: (mobile: 2rem);

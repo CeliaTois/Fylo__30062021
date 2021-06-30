@@ -1,0 +1,31 @@
+/* Input */
+.register__input {
+    display: flex;
+    flex-direction: column;
+    & input {
+        border: 1px $main-color solid;
+        border-radius: $border-radius;
+        padding-left: 20px;
+        margin: 19px 0 16px 0;
+        height: map-get($map: $input-height, $key: mobile);
+        font-size: 1.2rem;
+        &::placeholder {
+            color: $placeholder-color;
+            font-family: $input-font;
+        }
+        &:not(:focus):invalid {
+            border: 1px $error-clr solid;
+            margin-bottom: 5px; /* Remove margin-bottom when the input is invalid */
+            & ~span {
+                display: flex; /* Show the error message */
+                color: $error-clr;
+                font-size: 1rem;
+                margin-bottom: 10px; /* Create a margin-bottom between the error message and the button */
+            }
+            
+        }
+    }
+    & span {
+        display: none; /* Hide the error message */
+    }
+}

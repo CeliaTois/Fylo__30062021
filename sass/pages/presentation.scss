@@ -1,0 +1,25 @@
+/* Section 1 : Présentation */
+#presentation {
+    margin: 90px map-get($map: $margin-phone, $key: presentation);
+    &__image {
+        & img {
+            width: 100%;
+        }
+    }
+    &__text {
+        text-align: center;
+        & h1 {
+            font-family: map-get($map: $h1-font, $key: phone);
+            font-size: 2.3rem;
+            margin-top: 36px;
+            line-height: 3.6rem;
+        }
+        & p {
+            line-height: map-get($map: $p-height, $key: mobile);
+        }
+        & .register {
+            display: flex;
+            flex-direction: column; 
+        }               
+    }
+}

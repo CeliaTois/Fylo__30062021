@@ -1,0 +1,15 @@
+/* Button */
+.register__button {
+    font-family: $btn-font;
+    color: $btn-color;
+    background-color: $btn-background;
+    border: none;
+    border-radius: $border-radius;
+    padding-left: 20px;
+    height: map-get($map: $btn-height, $key: mobile);
+    box-shadow: 1px 1px 5px $placeholder-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $btn-background-hover;
+    }
+}

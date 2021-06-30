@@ -1,6 +1,6 @@
 /* Header */
 header {
-    margin: map-get($map: $margin, $key: body);
+    margin: map-get($map: $margin-phone, $key: body);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@ nav {
     & ul {
         display: flex;
         font-family: $nav-font;
-        font-size: 0.75rem;
+        font-size: 1.2rem;
         margin: 0;
         padding: 0;
         & li {

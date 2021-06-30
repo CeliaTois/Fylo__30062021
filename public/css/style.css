@@ -1,6 +1,14 @@
+@charset "UTF-8";
 /* Font-family */
+/* Font-size */
 /* Margins & Paddings */
 /* Colors */
+/* Border-radius */
+/* Height */
+html {
+  font-size: 62.5%;
+}
+
 * {
   list-style-type: none;
   text-decoration: none;
@@ -9,7 +17,7 @@
 body {
   margin: 0;
   font-family: OpenSans-Regular;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #070439;
 }
 
@@ -29,6 +37,57 @@ body {
   font-family: Raleway-Bold;
   src: url(../../fonts/Raleway-Bold.ttf);
 }
+/* Input */
+.register__input {
+  display: flex;
+  flex-direction: column;
+}
+.register__input input {
+  border: 1px #070439 solid;
+  border-radius: 3px;
+  padding-left: 20px;
+  margin: 19px 0 16px 0;
+  height: 36px;
+  font-size: 1.2rem;
+}
+.register__input input::placeholder {
+  color: #bfbfbf;
+  font-family: Raleway-Regular;
+}
+.register__input input:not(:focus):invalid {
+  border: 1px #eb9393 solid;
+  margin-bottom: 5px;
+  /* Remove margin-bottom when the input is invalid */
+}
+.register__input input:not(:focus):invalid ~ span {
+  display: flex;
+  /* Show the error message */
+  color: #eb9393;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  /* Create a margin-bottom between the error message and the button */
+}
+.register__input span {
+  display: none;
+  /* Hide the error message */
+}
+
+/* Button */
+.register__button {
+  font-family: Raleway-Bold;
+  color: #FFF;
+  background-color: #3065f8;
+  border: none;
+  border-radius: 3px;
+  padding-left: 20px;
+  height: 40px;
+  box-shadow: 1px 1px 5px #bfbfbf;
+  cursor: pointer;
+}
+.register__button:hover {
+  background-color: #6B9BFF;
+}
+
 /* Header */
 header {
   margin: 25px;
@@ -43,13 +102,123 @@ header #logo img {
 nav ul {
   display: flex;
   font-family: Raleway-Regular;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
 }
 nav ul li {
   margin-left: 25px;
   cursor: pointer;
+}
+
+/* Section 1 : Présentation */
+#presentation {
+  margin: 90px 35px;
+}
+#presentation__image img {
+  width: 100%;
+}
+#presentation__text {
+  text-align: center;
+}
+#presentation__text h1 {
+  font-family: OpenSans-Bold;
+  font-size: 2.3rem;
+  margin-top: 36px;
+  line-height: 3.6rem;
+}
+#presentation__text p {
+  line-height: 2rem;
+}
+#presentation__text .register {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section 2 : Description */
+#description {
+  background: url("../../images/bg-curve-mobile.svg") no-repeat;
+  background-size: 750% 100%;
+  /* width height */
+  background-position-x: center;
+  padding: 93px 25px 80px;
+}
+#description__image img {
+  width: 100%;
+}
+#description__text h2 {
+  font-family: Raleway-Bold;
+  font-size: 1.5rem;
+  margin: 85px 0 27px;
+  text-align: center;
+}
+#description__text .text {
+  color: #585989;
+  line-height: 2rem;
+  margin-bottom: 18px;
+}
+#description__text__link {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px #3c9f8f solid;
+  /* Bottom border */
+  padding-bottom: 5px;
+  /* Space between text and bottom border */
+  width: fit-content;
+  /* Border's width = text + image */
+  margin: 37px auto;
+  /* Center the div */
+  color: #3c9f8f;
+  cursor: pointer;
+}
+#description__text__link:hover {
+  color: #33e1c1;
+  border-bottom: 1px #33e1c1 solid;
+}
+#description__text__link p {
+  margin: 0 10px 0 0;
+  font-size: 1.2rem;
+}
+#description__text__link__arrow {
+  width: 16px;
+  height: auto;
+}
+#description__review {
+  padding: 20px 24px 22px;
+  margin: 40px 22px 0;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 20px #bfbfbf;
+}
+#description__review__quotes {
+  width: 14px;
+  height: auto;
+}
+#description__review__text {
+  font-size: 1.05rem;
+  margin-top: 2px;
+  line-height: 1.8rem;
+}
+#description__review__person {
+  display: flex;
+  align-items: center;
+}
+#description__review__person img {
+  width: 25px;
+  border-radius: 25px;
+  float: left;
+}
+#description__review__person__infos {
+  margin-left: 10px;
+}
+#description__review__person__infos #name {
+  margin: 0 0 2px;
+  font-family: Raleway-Bold;
+  font-size: 1rem;
+}
+#description__review__person__infos #profession {
+  margin: 0;
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

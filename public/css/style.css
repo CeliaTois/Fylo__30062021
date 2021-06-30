@@ -86,9 +86,11 @@ body {
 #register__input input {
   border: none;
   padding-left: 10px;
+  margin-bottom: 8px;
   box-shadow: 2px 2px 5px #56567b;
   border-radius: 2px;
   font-size: 1rem;
+  height: 30px;
 }
 #register__input input:not(:focus):invalid ~ span {
   color: #FFF;
@@ -116,6 +118,7 @@ body {
   font-size: 1rem;
   padding: 10px 20px;
   border-radius: 0;
+  height: 32px;
 }
 
 /* Header */
@@ -314,7 +317,7 @@ footer .attribution {
   background-color: #585989;
   color: #FFF;
   text-align: center;
-  padding: 55px 45px 70px;
+  padding: 54px 45px 70px;
 }
 #register__text h2 {
   margin: 0;

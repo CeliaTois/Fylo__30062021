@@ -1,0 +1,26 @@
+/* Header */
+header {
+    margin: map-get($map: $margin, $key: body);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & #logo {
+        & img {
+            width: 80px;
+        }
+    }
+}
+
+nav {
+    & ul {
+        display: flex;
+        font-family: $nav-font;
+        font-size: 0.75rem;
+        margin: 0;
+        padding: 0;
+        & li {
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+}

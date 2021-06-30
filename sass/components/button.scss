@@ -5,11 +5,21 @@
     background-color: $btn-background;
     border: none;
     border-radius: $border-radius;
-    padding-left: 20px;
     height: map-get($map: $btn-height, $key: mobile);
+    width: 100%;
     box-shadow: 1px 1px 5px $placeholder-color;
     cursor: pointer;
     &:hover {
         background-color: $btn-background-hover;
+    }
+}
+
+/* Button : Register */
+#register__input {
+    & button {
+        box-shadow: 2px 2px 5px $register-shadow;
+        font-size: $register-input;
+        padding: 10px 20px;
+        border-radius: 0;
     }
 }

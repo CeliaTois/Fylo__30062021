@@ -41,12 +41,13 @@ body {
 .register__input {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .register__input input {
   border: 1px #070439 solid;
   border-radius: 3px;
   padding-left: 20px;
-  margin: 19px 0 16px 0;
+  margin: 19px 0 16px;
   height: 36px;
   font-size: 1.2rem;
 }
@@ -72,6 +73,27 @@ body {
   /* Hide the error message */
 }
 
+/* Input : Presention */
+#presentation__text__register__input {
+  margin-left: 2px;
+  /* Small shift with the button */
+}
+
+/* Input : Register */
+#register__input {
+  margin: 0 25px;
+}
+#register__input input {
+  border: none;
+  padding-left: 10px;
+  box-shadow: 2px 2px 5px #56567b;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+#register__input input:not(:focus):invalid ~ span {
+  color: #FFF;
+}
+
 /* Button */
 .register__button {
   font-family: Raleway-Bold;
@@ -79,13 +101,21 @@ body {
   background-color: #3065f8;
   border: none;
   border-radius: 3px;
-  padding-left: 20px;
   height: 40px;
+  width: 100%;
   box-shadow: 1px 1px 5px #bfbfbf;
   cursor: pointer;
 }
 .register__button:hover {
   background-color: #6B9BFF;
+}
+
+/* Button : Register */
+#register__input button {
+  box-shadow: 2px 2px 5px #56567b;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 0;
 }
 
 /* Header */
@@ -109,6 +139,64 @@ nav ul {
 nav ul li {
   margin-left: 25px;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #070439;
+  color: #fff;
+  padding: 65px 45px 30px;
+  font-size: 1.5rem;
+}
+footer #contact__phone {
+  margin: 37px 0 20px 0;
+}
+footer #contact__email {
+  margin-bottom: 60px;
+}
+footer #contact img {
+  margin-right: 20px;
+}
+footer ul {
+  padding: 0;
+  margin-bottom: 50px;
+}
+footer ul li {
+  margin-bottom: 18px;
+  width: fit-content;
+  cursor: pointer;
+}
+footer ul li:hover {
+  color: #6B9BFF;
+}
+footer a {
+  color: #fff;
+}
+footer #social-media {
+  display: flex;
+  justify-content: center;
+}
+footer #social-media .icon {
+  border: 1px #fff solid;
+  border-radius: 15px;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  text-align: center;
+}
+footer #social-media .icon:hover {
+  color: #6B9BFF;
+  border: 1px #6B9BFF solid;
+  cursor: pointer;
+}
+footer #social-media i {
+  padding: 7px;
+  font-size: 1.2rem;
+}
+footer .attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* Section 1 : Présentation */
@@ -219,6 +307,23 @@ nav ul li {
 #description__review__person__infos #profession {
   margin: 0;
   font-size: 0.7rem;
+}
+
+/* Section 3 : Register */
+#register {
+  background-color: #585989;
+  color: #FFF;
+  text-align: center;
+  padding: 55px 45px 70px;
+}
+#register__text h2 {
+  margin: 0;
+  font-family: Raleway-Bold;
+  font-size: 1.8rem;
+}
+#register__text p {
+  line-height: 2rem;
+  margin: 20px 0 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

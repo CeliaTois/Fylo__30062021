@@ -1,0 +1,59 @@
+/* Footer */
+footer {
+    background-color: $main-color;
+    color: #fff;
+    padding: 65px map-get($map: $margin-phone, $key: footer) 30px;
+    font-size: 1.5rem;
+    & #contact {
+        &__phone {
+            margin: 37px 0 20px 0;
+        }
+        &__email {
+            margin-bottom: 60px;
+        }
+        & img {
+                margin-right: 20px;
+        }
+    }
+    & ul {
+        padding: 0;
+        margin-bottom: 50px;
+        & li {
+            margin-bottom: 18px;
+            width: fit-content;
+            cursor: pointer;
+            &:hover {
+                color: $btn-background-hover;
+            }
+        }
+    }
+    & a {
+        color: #fff;
+    }
+    & #social-media {
+        display: flex;
+        justify-content: center;
+        & .icon {
+            border: 1px #fff solid;
+            border-radius: 15px;
+            width: 25px;
+            height: 25px;
+            margin: 5px;
+            text-align: center;
+            &:hover {
+                color: $btn-background-hover;
+                border: 1px $btn-background-hover solid;
+                cursor: pointer;
+            }
+        }
+        & i {
+            padding: 7px;
+            font-size: 1.2rem;
+        }
+    }
+    & .attribution {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 30px;
+    }
+}    

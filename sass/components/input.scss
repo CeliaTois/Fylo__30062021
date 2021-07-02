@@ -1,15 +1,10 @@
 /* Input */
 .register__input {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
     & input {
-        border: 1px $main-color solid;
-        border-radius: $border-radius;
-        padding-left: 20px;
         margin: 19px 0 16px;
-        height: map-get($map: $input-height, $key: mobile);
-        font-size: 1.2rem;
         &::placeholder {
             color: $placeholder-color;
             font-family: $input-font;
@@ -34,10 +29,17 @@
 /* Input : Presention */
 #presentation__text__register__input {
     margin-left: 2px; /* Small shift with the button */
+    & input {
+        border: 1px $main-color solid;
+        border-radius: $border-radius;
+        padding-left: 20px;
+        height: map-get($map: $input-height, $key: mobile);
+        font-size: 1.2rem;
+    }
 }
 
 /* Input : Register */
-#register__input {
+#register__block__input {
     margin: 0 25px;
     & input {
         border: none;

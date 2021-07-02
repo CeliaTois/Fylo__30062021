@@ -2,17 +2,26 @@
 #register {
     background-color: $register-bg;
     color: #FFF;
-    text-align: center;
     padding: 54px 45px 70px;
-    &__text {
-        & h2 {
-            margin : 0;
-            font-family: $h2-font;
-            font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__block {
+        @include small-devices {
+            max-width: $sm-devices-max-width;
         }
-        & p {
-            line-height: map-get($map: $p-height, $key: mobile);
-            margin: 20px 0 7px;
+        &__text {
+            text-align: center;
+            & h2 {
+                margin : 0;
+                font-family: $h2-font;
+                font-size: 1.8rem;
+            }
+            & p {
+                line-height: map-get($map: $p-height, $key: mobile);
+                margin: 20px 0 7px;
+            }
         }
     }
+    
 }

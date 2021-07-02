@@ -6,6 +6,8 @@
 /* Border-radius */
 /* Height */
 /* Width */
+/* Landscapes phones */
+/* Medium devices : Tablets */
 html {
   font-size: 62.5%;
 }
@@ -20,6 +22,11 @@ body {
   font-family: OpenSans-Regular;
   font-size: 1.4rem;
   color: #070439;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 1.6rem;
+  }
 }
 
 @font-face {
@@ -64,6 +71,11 @@ body {
   margin-bottom: 10px;
   /* Create a margin-bottom between the error message and the button */
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .register__input input:not(:focus):invalid ~ span {
+    font-size: 1.17rem;
+  }
+}
 .register__input span {
   display: none;
   /* Hide the error message */
@@ -81,10 +93,21 @@ body {
   height: 36px;
   font-size: 1.2rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation__text__register__input input {
+    font-size: 1.4rem;
+    height: 42px;
+  }
+}
 
 /* Input : Register */
 #register__block__input {
   margin: 0 25px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #register__block__input {
+    margin: 0 35px;
+  }
 }
 #register__block__input input {
   border: none;
@@ -94,6 +117,14 @@ body {
   border-radius: 2px;
   font-size: 1rem;
   height: 30px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #register__block__input input {
+    padding-left: 12px;
+    margin-bottom: 11px;
+    font-size: 1.17rem;
+    height: 35px;
+  }
 }
 #register__block__input input:not(:focus):invalid ~ span {
   color: #FFF;
@@ -111,6 +142,11 @@ body {
   box-shadow: 1px 1px 5px #bfbfbf;
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .register__button {
+    height: 46px;
+  }
+}
 .register__button:hover {
   background-color: #6B9BFF;
 }
@@ -123,6 +159,12 @@ body {
   border-radius: 0;
   height: 32px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #register__block__input button {
+    font-size: 1.17rem;
+    height: 37px;
+  }
+}
 
 /* Header */
 header {
@@ -131,8 +173,23 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 577px) and (max-width: 767px) {
+  header {
+    margin: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    margin: 55px;
+  }
+}
 header #logo img {
   width: 80px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header #logo img {
+    width: 110px;
+  }
 }
 
 nav ul {
@@ -142,6 +199,11 @@ nav ul {
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  nav ul {
+    font-size: 1.4rem;
+  }
 }
 nav ul li {
   margin-left: 25px;
@@ -155,8 +217,28 @@ footer {
   padding: 65px 45px 30px;
   font-size: 1.5rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding: 91px 63px 42px;
+    font-size: 1.75rem;
+  }
+}
+footer #footer-logo {
+  width: 166px;
+}
+footer > div {
+  margin-top: 37px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+}
 footer #contact__phone {
-  margin: 37px 0 20px 0;
+  margin-bottom: 20px;
 }
 footer #contact__email {
   margin-bottom: 60px;
@@ -191,6 +273,11 @@ footer #social-media .icon {
   margin: 5px;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  footer #social-media .icon {
+    margin-top: 25px;
+  }
+}
 footer #social-media .icon:hover {
   color: #6B9BFF;
   border: 1px #6B9BFF solid;
@@ -205,6 +292,11 @@ footer .attribution {
   text-align: center;
   margin-top: 30px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .attribution {
+    font-size: 1.16rem;
+  }
+}
 
 /* Section 1 : Présentation */
 #presentation {
@@ -213,12 +305,24 @@ footer .attribution {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation {
+    margin: 120px 77px;
+    text-align: center;
+  }
+}
 #presentation__image img {
   width: 100%;
 }
 @media (min-width: 577px) and (max-width: 767px) {
   #presentation__image img {
     max-width: 550px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation__image img {
+    width: 85%;
+    max-width: 750px;
   }
 }
 #presentation__text {
@@ -229,14 +333,31 @@ footer .attribution {
     max-width: 550px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation__text {
+    width: 85%;
+    max-width: 750px;
+  }
+}
 #presentation__text h1 {
   font-family: OpenSans-Bold;
   font-size: 2.3rem;
   margin-top: 36px;
   line-height: 3.6rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation__text h1 {
+    font-size: 2.7rem;
+    margin-top: 50px;
+  }
+}
 #presentation__text p {
   line-height: 2rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #presentation__text p {
+    line-height: 2.3rem;
+  }
 }
 #presentation__text .register {
   display: flex;
@@ -254,6 +375,14 @@ footer .attribution {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description {
+    padding: 130px 55px 112px;
+  }
+}
+#description__image {
+  text-align: center;
+}
 #description__image img {
   width: 100%;
 }
@@ -262,9 +391,21 @@ footer .attribution {
     max-width: 550px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__image img {
+    width: 85%;
+    max-width: 750px;
+  }
+}
 @media (min-width: 577px) and (max-width: 767px) {
   #description__block {
     max-width: 550px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block {
+    width: 85%;
+    max-width: 750px;
   }
 }
 #description__block__text h2 {
@@ -273,10 +414,21 @@ footer .attribution {
   margin: 85px 0 27px;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__text h2 {
+    font-size: 1.75rem;
+    margin: 119px 0 38px;
+  }
+}
 #description__block__text .text {
   color: #585989;
   line-height: 2rem;
   margin-bottom: 18px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__text .text {
+    margin-bottom: 25px;
+  }
 }
 #description__block__text__link {
   display: flex;
@@ -292,6 +444,11 @@ footer .attribution {
   color: #3c9f8f;
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__text__link {
+    margin: 45px auto;
+  }
+}
 #description__block__text__link:hover {
   color: #33e1c1;
   border-bottom: 1px #33e1c1 solid;
@@ -300,9 +457,19 @@ footer .attribution {
   margin: 0 10px 0 0;
   font-size: 1.2rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__text__link p {
+    font-size: 1.4rem;
+  }
+}
 #description__block__text__link__arrow {
   width: 16px;
   height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__text__link__arrow {
+    width: 18px;
+  }
 }
 #description__block__review {
   padding: 20px 24px 22px;
@@ -311,14 +478,32 @@ footer .attribution {
   border-radius: 3px;
   box-shadow: 0 0 20px #bfbfbf;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review {
+    padding: 28px 33px 30px;
+    margin: 56px 30px 0;
+  }
+}
 #description__block__review__quotes {
   width: 14px;
   height: auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review__quotes {
+    width: 16px;
+  }
 }
 #description__block__review__text {
   font-size: 1.05rem;
   margin-top: 2px;
   line-height: 1.8rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review__text {
+    font-size: 1.23rem;
+    margin-top: 2.8px;
+    line-height: 2.1rem;
+  }
 }
 #description__block__review__person {
   display: flex;
@@ -329,17 +514,37 @@ footer .attribution {
   border-radius: 25px;
   float: left;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review__person img {
+    width: 29px;
+  }
+}
 #description__block__review__person__infos {
   margin-left: 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review__person__infos {
+    margin-left: 14px;
+  }
 }
 #description__block__review__person__infos #name {
   margin: 0 0 2px;
   font-family: Raleway-Bold;
   font-size: 1rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review__person__infos #name {
+    margin-bottom: 3px;
+  }
+}
 #description__block__review__person__infos #profession {
   margin: 0;
   font-size: 0.7rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__block__review__person__infos #profession {
+    font-size: 0.8rem;
+  }
 }
 
 /* Section 3 : Register */
@@ -351,9 +556,19 @@ footer .attribution {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #register {
+    padding: 76px 63px 98px;
+  }
+}
 @media (min-width: 577px) and (max-width: 767px) {
   #register__block {
     max-width: 550px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #register__block {
+    max-width: 750px;
   }
 }
 #register__block__text {
@@ -364,9 +579,20 @@ footer .attribution {
   font-family: Raleway-Bold;
   font-size: 1.8rem;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #register__block__text h2 {
+    font-size: 2.1rem;
+  }
+}
 #register__block__text p {
   line-height: 2rem;
   margin: 20px 0 7px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #register__block__text p {
+    line-height: 2.3rem;
+    margin: 28px 0 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,9 +4,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include small-devices {
+        margin: $margin-small-devices;
+    }
+    @include tablets {
+        margin: map-get($map: $margin-tablet, $key: body);
+    } 
     & #logo {
         & img {
             width: 80px;
+            @include tablets {
+                width: 110px;
+            }
         }
     }
 }
@@ -19,6 +28,9 @@ nav {
         font-size: 1.2rem;
         margin: 0;
         padding: 0;
+        @include tablets {
+            font-size: 1.4rem;
+        }
         & li {
             margin-left: 25px;
             cursor: pointer;

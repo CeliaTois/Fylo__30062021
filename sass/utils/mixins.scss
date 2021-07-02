@@ -1,5 +1,13 @@
+/* Landscapes phones */
 @mixin small-devices {
     @media (min-width: 577px) and (max-width: 767px) {
         @content;        
     }    
+}
+
+/* Medium devices : Tablets */
+@mixin tablets {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
 }

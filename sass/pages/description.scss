@@ -7,11 +7,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablets {
+        padding: 130px map-get($map: $margin-tablet, $key: body) 112px;
+    }
     &__image {
+        text-align: center;
         & img {
             width: 100%;
             @include small-devices {
                 max-width: $sm-devices-max-width;
+            }
+            @include tablets {
+                width: $tablets-width;
+                max-width: $tablets-max-width;
             }
         }
     }
@@ -19,17 +27,28 @@
         @include small-devices {
             max-width: $sm-devices-max-width;
         }
+        @include tablets {
+            width: $tablets-width;
+            max-width: $tablets-max-width;
+        }
         &__text {
             & h2 {
                 font-family: $h2-font;
                 font-size: 1.5rem;
                 margin: 85px 0 27px;
                 text-align: center;
+                @include tablets {
+                    font-size: 1.75rem;
+                    margin: 119px 0 38px;
+                }
             }
             & .text {
                 color: hsl(238, 22%, 44%);
                 line-height: map-get($map: $p-height, $key: mobile);
                 margin-bottom: 18px;
+                @include tablets {
+                    margin-bottom: 25px;
+                }
             }
             &__link {
                 display: flex;
@@ -40,6 +59,9 @@
                 margin: 37px auto; /* Center the div */
                 color: $link-clr;
                 cursor: pointer;
+                @include tablets {
+                    margin: 45px auto;
+                }
                 &:hover {
                     color: $link-clr-hover;
                     border-bottom: 1px $link-clr-hover solid;
@@ -47,10 +69,16 @@
                 & p {
                     margin: 0 10px 0 0;
                     font-size: 1.2rem;
+                    @include tablets {
+                        font-size: 1.4rem;
+                    }
                 }
                 &__arrow {
                     width: 16px;
                     height: auto;
+                    @include tablets {
+                        width: 18px;
+                    }
                 }
             }
         }
@@ -60,14 +88,26 @@
             background-color: #fff;
             border-radius: $border-radius;
             box-shadow: 0 0 20px $placeholder-color;
+            @include tablets {
+                padding: 28px 33px 30px;
+                margin: 56px 30px 0;
+            }
             &__quotes {
                 width: 14px;
                 height: auto;
+                @include tablets {
+                    width: 16px;
+                }
             }
             &__text {
                 font-size: 1.05rem;
                 margin-top: 2px;
                 line-height: 1.8rem;
+                @include tablets {
+                    font-size: 1.23rem;
+                    margin-top: 2.8px;
+                    line-height: 2.1rem;
+                }
             }
             &__person {
                 display: flex;
@@ -76,17 +116,29 @@
                     width: 25px;
                     border-radius: 25px;
                     float: left;
+                    @include tablets {
+                        width: 29px;
+                    }
                 }
                 &__infos {
                     margin-left: 10px;
+                    @include tablets {
+                        margin-left: 14px;
+                    }
                     & #name {
                         margin: 0 0 2px;
                         font-family: $h2-font;
                         font-size: 1rem;
+                        @include tablets {
+                            margin-bottom: 3px;
+                        }
                     }
                     & #profession {
                         margin: 0;
                         font-size: 0.7rem;
+                        @include tablets {
+                            font-size: 0.8rem;
+                        }
                     }
                 }        
             }     

@@ -15,8 +15,11 @@
             & ~span {
                 display: flex; /* Show the error message */
                 color: $error-clr;
-                font-size: $register-input;
+                font-size: map-get($map: $register-input, $key: mobile);
                 margin-bottom: 10px; /* Create a margin-bottom between the error message and the button */
+                @include tablets {
+                    font-size: map-get($map: $register-input, $key: tablet);
+                }
             }
             
         }
@@ -35,20 +38,33 @@
         padding-left: 20px;
         height: map-get($map: $input-height, $key: mobile);
         font-size: 1.2rem;
+        @include tablets {
+            font-size: 1.4rem;
+            height: map-get($map: $input-height, $key: tablet);
+        }
     }
 }
 
 /* Input : Register */
 #register__block__input {
     margin: 0 25px;
+    @include tablets {
+        margin: 0 35px;
+    }
     & input {
         border: none;
         padding-left: 10px;
         margin-bottom: 8px;
         box-shadow: 2px 2px 5px $register-shadow;
         border-radius: 2px;
-        font-size: $register-input;
+        font-size: map-get($map: $register-input, $key: mobile);
         height: 30px;
+        @include tablets {
+            padding-left: 12px;
+            margin-bottom: 11px;
+            font-size: map-get($map: $register-input, $key: tablet);
+            height: 35px;
+        }
         &:not(:focus):invalid {
             & ~span {
                 color: #FFF;

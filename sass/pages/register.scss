@@ -6,9 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablets {
+        padding: 76px 63px 98px;
+    }
     &__block {
         @include small-devices {
             max-width: $sm-devices-max-width;
+        }
+        @include tablets {
+            max-width: $tablets-max-width;
         }
         &__text {
             text-align: center;
@@ -16,10 +22,17 @@
                 margin : 0;
                 font-family: $h2-font;
                 font-size: 1.8rem;
+                @include tablets {
+                    font-size: 2.1rem;
+                }
             }
             & p {
                 line-height: map-get($map: $p-height, $key: mobile);
                 margin: 20px 0 7px;
+                @include tablets {
+                    line-height: map-get($map: $p-height, $key: tablet);
+                    margin: 28px 0 10px;
+                }
             }
         }
     }

@@ -9,6 +9,9 @@
     width: 100%;
     box-shadow: 1px 1px 5px $placeholder-color;
     cursor: pointer;
+    @include tablets {
+        height: map-get($map: $btn-height, $key: tablet);
+    }
     &:hover {
         background-color: $btn-background-hover;
     }
@@ -18,9 +21,13 @@
 #register__block__input {
     & button {
         box-shadow: 2px 2px 5px $register-shadow;
-        font-size: $register-input;
+        font-size: map-get($map: $register-input, $key: mobile);
         padding: 10px 20px;
         border-radius: 0;
         height: 32px;
+        @include tablets {
+            font-size: map-get($map: $register-input, $key: tablet);
+            height: 37px;
+        }
     }
 }

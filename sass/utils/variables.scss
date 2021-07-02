@@ -7,10 +7,12 @@ $input-font: Raleway-Regular;
 $btn-font: Raleway-Bold;
 
 /* Font-size */
-$register-input: 1rem;
+$register-input: (mobile: 1rem, tablet: 1.17rem);
 
 /* Margins & Paddings */
 $margin-phone: (body: 25px, presentation: 35px, footer: 45px);
+$margin-small-devices: 40px;
+$margin-tablet: (body: 55px, presentation: 77px, footer: 63px);
 
 /* Colors */
 $main-color: hsl(243, 87%, 12%);
@@ -28,9 +30,11 @@ $register-shadow: hsl(240, 18%, 41%);
 $border-radius: 3px;
 
 /* Height */
-$input-height: (mobile: 36px, desktop: 60px);
-$btn-height: (mobile: 40px);
-$p-height: (mobile: 2rem);
+$input-height: (mobile: 36px, tablet: 42px, desktop: 60px);
+$btn-height: (mobile: 40px, tablet: 46px);
+$p-height: (mobile: 2rem, tablet: 2.3rem);
 
 /* Width */
 $sm-devices-max-width: 550px;
+$tablets-width: 85%;
+$tablets-max-width: 750px;

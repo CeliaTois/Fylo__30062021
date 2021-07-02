@@ -4,11 +4,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablets {
+        margin: 120px map-get($map: $margin-tablet, $key: presentation);
+        text-align: center;
+    }
     &__image {
         & img {
             width: 100%;
             @include small-devices {
                 max-width: $sm-devices-max-width;
+            }
+            @include tablets {
+                width: $tablets-width;
+                max-width: $tablets-max-width;
             }
         }
     }
@@ -17,14 +25,25 @@
         @include small-devices {
             max-width: $sm-devices-max-width;
         }
+        @include tablets {
+            width: $tablets-width;
+            max-width: $tablets-max-width;
+        }
         & h1 {
             font-family: map-get($map: $h1-font, $key: phone);
             font-size: 2.3rem;
             margin-top: 36px;
             line-height: 3.6rem;
+            @include tablets {
+                font-size: 2.7rem;
+                margin-top: 50px;
+            }
         }
         & p {
             line-height: map-get($map: $p-height, $key: mobile);
+            @include tablets {
+                line-height: map-get($map: $p-height, $key: tablet);
+            }
         }
         & .register {
             display: flex;

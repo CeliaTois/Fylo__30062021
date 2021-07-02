@@ -1,5 +1,6 @@
 /* Section 2 : Description */
 #description {
+    width: auto;
     background: url("../../images/bg-curve-mobile.svg") no-repeat;
     background-size: 750% 100%; /* width height */
     background-position-x: center;
@@ -10,17 +11,27 @@
     @include tablets {
         padding: 130px map-get($map: $margin-tablet, $key: body) 112px;
     }
+    @include small-desktops {
+        background: utl("../../images/bg-curve-desktop.svg") no repeat;
+        background-size: 400% 100%; /* width height */
+        @include section-position;
+        padding: 130px map-get($map: $margin-small-desktop, $key: body) 112px;
+    }
     &__image {
         text-align: center;
+        width: 100%;
+        @include small-devices {
+            max-width: $sm-devices-max-width;
+        }
+        @include tablets {
+            width: $tablets-width;
+            max-width: $tablets-max-width;
+        }
+        @include small-desktops {
+            width: 37.76%;
+        }
         & img {
             width: 100%;
-            @include small-devices {
-                max-width: $sm-devices-max-width;
-            }
-            @include tablets {
-                width: $tablets-width;
-                max-width: $tablets-max-width;
-            }
         }
     }
     &__block {
@@ -30,6 +41,9 @@
         @include tablets {
             width: $tablets-width;
             max-width: $tablets-max-width;
+        }
+        @include small-desktops {
+            width: 36.46%;
         }
         &__text {
             & h2 {

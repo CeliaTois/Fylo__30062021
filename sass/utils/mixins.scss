@@ -11,3 +11,17 @@
         @content;
     }
 }
+
+/* Large devices : Desktops */
+@mixin small-desktops {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }    
+}
+
+/* Desktops sections' position */
+@mixin section-position {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}

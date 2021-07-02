@@ -8,6 +8,8 @@
 /* Width */
 /* Landscapes phones */
 /* Medium devices : Tablets */
+/* Large devices : Desktops */
+/* Desktops sections' position */
 html {
   font-size: 62.5%;
 }
@@ -82,6 +84,12 @@ body {
 }
 
 /* Input : Presention */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__text__register {
+    width: 85%;
+    /* Input and button width */
+  }
+}
 #presentation__text__register__input {
   margin-left: 2px;
   /* Small shift with the button */
@@ -183,12 +191,22 @@ header {
     margin: 55px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    margin: 77px;
+  }
+}
 header #logo img {
   width: 80px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header #logo img {
     width: 110px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header #logo img {
+    width: 150px;
   }
 }
 
@@ -205,9 +223,24 @@ nav ul {
     font-size: 1.4rem;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav ul {
+    font-size: 1.6rem;
+  }
+}
 nav ul li {
   margin-left: 25px;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  nav ul li {
+    margin-left: 45px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav ul li {
+    margin-left: 60px;
+  }
 }
 
 /* Footer */
@@ -300,6 +333,7 @@ footer .attribution {
 
 /* Section 1 : Présentation */
 #presentation {
+  width: auto;
   margin: 90px 35px;
   display: flex;
   flex-direction: column;
@@ -311,19 +345,35 @@ footer .attribution {
     text-align: center;
   }
 }
-#presentation__image img {
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation {
+    margin: 20px 77px 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}
+#presentation__image {
   width: 100%;
 }
 @media (min-width: 577px) and (max-width: 767px) {
-  #presentation__image img {
+  #presentation__image {
     max-width: 550px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  #presentation__image img {
+  #presentation__image {
     width: 85%;
     max-width: 750px;
   }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__image {
+    width: 44.27%;
+  }
+}
+#presentation__image img {
+  width: 100%;
 }
 #presentation__text {
   text-align: center;
@@ -339,6 +389,12 @@ footer .attribution {
     max-width: 750px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__text {
+    width: 41.67%;
+    text-align: left;
+  }
+}
 #presentation__text h1 {
   font-family: OpenSans-Bold;
   font-size: 2.3rem;
@@ -349,6 +405,11 @@ footer .attribution {
   #presentation__text h1 {
     font-size: 2.7rem;
     margin-top: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__text h1 {
+    font-family: Raleway-Bold;
   }
 }
 #presentation__text p {
@@ -366,6 +427,7 @@ footer .attribution {
 
 /* Section 2 : Description */
 #description {
+  width: auto;
   background: url("../../images/bg-curve-mobile.svg") no-repeat;
   background-size: 750% 100%;
   /* width height */
@@ -380,24 +442,41 @@ footer .attribution {
     padding: 130px 55px 112px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description {
+    background: utl("../../images/bg-curve-desktop.svg") no repeat;
+    background-size: 400% 100%;
+    /* width height */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 130px 77px 112px;
+  }
+}
 #description__image {
   text-align: center;
+  width: 100%;
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  #description__image {
+    max-width: 550px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #description__image {
+    width: 85%;
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description__image {
+    width: 37.76%;
+  }
 }
 #description__image img {
   width: 100%;
 }
 @media (min-width: 577px) and (max-width: 767px) {
-  #description__image img {
-    max-width: 550px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  #description__image img {
-    width: 85%;
-    max-width: 750px;
-  }
-}
-@media (min-width: 577px) and (max-width: 767px) {
   #description__block {
     max-width: 550px;
   }
@@ -406,6 +485,11 @@ footer .attribution {
   #description__block {
     width: 85%;
     max-width: 750px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description__block {
+    width: 36.46%;
   }
 }
 #description__block__text h2 {

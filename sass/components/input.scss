@@ -30,17 +30,22 @@
 }
 
 /* Input : Presention */
-#presentation__text__register__input {
-    margin-left: 2px; /* Small shift with the button */
-    & input {
-        border: 1px $main-color solid;
-        border-radius: $border-radius;
-        padding-left: 20px;
-        height: map-get($map: $input-height, $key: mobile);
-        font-size: 1.2rem;
-        @include tablets {
-            font-size: 1.4rem;
-            height: map-get($map: $input-height, $key: tablet);
+#presentation__text__register {
+    @include small-desktops {
+        width: 85%; /* Input and button width */
+    }
+    &__input {
+        margin-left: 2px; /* Small shift with the button */
+        & input {
+            border: 1px $main-color solid;
+            border-radius: $border-radius;
+            padding-left: 20px;
+            height: map-get($map: $input-height, $key: mobile);
+            font-size: 1.2rem;
+            @include tablets {
+                font-size: 1.4rem;
+                height: map-get($map: $input-height, $key: tablet);
+            }
         }
     }
 }

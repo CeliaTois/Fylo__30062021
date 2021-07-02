@@ -1,5 +1,6 @@
 /* Section 1 : Présentation */
 #presentation {
+    width: auto;
     margin: 90px map-get($map: $margin-phone, $key: presentation);
     display: flex;
     flex-direction: column;
@@ -8,16 +9,24 @@
         margin: 120px map-get($map: $margin-tablet, $key: presentation);
         text-align: center;
     }
+    @include small-desktops {
+        margin: 20px map-get($map: $margin-small-desktop, $key: body) 150px;
+        @include section-position;
+    }
     &__image {
+        width: 100%;
+        @include small-devices {
+            max-width: $sm-devices-max-width;
+        }
+        @include tablets {
+            width: $tablets-width;
+            max-width: $tablets-max-width;
+        }
+        @include small-desktops {
+            width: 44.27%;
+        }
         & img {
             width: 100%;
-            @include small-devices {
-                max-width: $sm-devices-max-width;
-            }
-            @include tablets {
-                width: $tablets-width;
-                max-width: $tablets-max-width;
-            }
         }
     }
     &__text {
@@ -29,6 +38,10 @@
             width: $tablets-width;
             max-width: $tablets-max-width;
         }
+        @include small-desktops {
+            width: 41.67%;
+            text-align: left;
+        }
         & h1 {
             font-family: map-get($map: $h1-font, $key: phone);
             font-size: 2.3rem;
@@ -37,6 +50,9 @@
             @include tablets {
                 font-size: 2.7rem;
                 margin-top: 50px;
+            }
+            @include small-desktops {
+                font-family: $h2-font;
             }
         }
         & p {

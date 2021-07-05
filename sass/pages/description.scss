@@ -98,15 +98,19 @@
                 align-items: flex-end;
                 border-bottom: 1px $link-clr solid; /* Bottom border */
                 padding-bottom: 5px; /* Space between text and bottom border */
-                width: fit-content; /* Border's width = text + arrow */
+                width: 140px; /* Border's width = text + arrow */
                 margin: 37px auto; /* Center the div */
                 color: $link-clr;
                 cursor: pointer;
                 @include tablets {
                     margin: 45px auto;
+                    width: 160px;
                 }
                 @include desktops {
                     margin: 0; /* Align to the left */
+                }
+                @include large-desktops { 
+                    width: 180px;    
                 }
                 &:hover {
                     color: $link-clr-hover;

@@ -705,7 +705,7 @@ footer .attribution {
   /* Bottom border */
   padding-bottom: 5px;
   /* Space between text and bottom border */
-  width: fit-content;
+  width: 140px;
   /* Border's width = text + arrow */
   margin: 37px auto;
   /* Center the div */
@@ -715,12 +715,18 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #description__block__text__link {
     margin: 45px auto;
+    width: 160px;
   }
 }
 @media (min-width: 992px) {
   #description__block__text__link {
     margin: 0;
     /* Align to the left */
+  }
+}
+@media (min-width: 1200px) {
+  #description__block__text__link {
+    width: 180px;
   }
 }
 #description__block__text__link:hover {

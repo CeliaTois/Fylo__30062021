@@ -53,4 +53,5 @@
 @mixin desktop-titles {
     font-size: map-get($map: $h1-size, $key: large-desktop);
     line-height: map-get($map: $h1-height, $key: large-desktop);
+    text-align: left;
 }

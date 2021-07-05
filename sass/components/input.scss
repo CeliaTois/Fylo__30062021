@@ -20,6 +20,10 @@
                 @include tablets {
                     font-size: map-get($map: $register-input, $key: tablet);
                 }
+                @include large-desktops {
+                    font-size: map-get($map: $register-input, $key: desktop);
+                    margin-top: 5px;
+                }
             }
             
         }
@@ -50,6 +54,7 @@
             @include large-desktops {
                 margin: 0; /* Align the input with the button */
                 height: map-get($map: $input-height, $key: desktop);
+                font-size: map-get($map: $register-input, $key: desktop);
             }
         }
     }

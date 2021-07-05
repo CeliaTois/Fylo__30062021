@@ -11,11 +11,16 @@
     @include tablets {
         padding: 130px map-get($map: $margin-tablet, $key: body) 112px;
     }
-    @include small-desktops {
-        background: utl("../../images/bg-curve-desktop.svg") no repeat;
+    @include desktops {
+        background: url("../../images/bg-curve-desktop.svg") no repeat;
         background-size: 400% 100%; /* width height */
         @include section-position;
+    }
+    @include small-desktops {
         padding: 130px map-get($map: $margin-desktop, $key: body) 112px;
+    }
+    @include large-desktops {
+        padding: 180px map-get($map: $margin-desktop, $key: body) 60px;
     }
     &__image {
         text-align: center;
@@ -27,8 +32,12 @@
             width: $tablets-width;
             max-width: $tablets-max-width;
         }
-        @include small-desktops {
-            width: 43.13%;
+        @include desktops {
+            width: 42.18%;
+            max-width: 540px;
+        }
+        @include large-desktops {
+            margin-top: 30px; /* Align vertically the illustration with the text */
         }
         & img {
             width: 100%;
@@ -42,8 +51,9 @@
             width: $tablets-width;
             max-width: $tablets-max-width;
         }
-        @include small-desktops {
-            width: 51.76%;
+        @include desktops {
+            width: 58.87%;
+            max-width: 730px;
         }
         &__text {
             & h2 {
@@ -60,6 +70,10 @@
                     font-size: map-get($map: $h1-size, $key: small-desktop);
                     text-align: left;
                 }
+                @include large-desktops {
+                    @include desktop-titles;
+                    margin: 0 0 30px;
+                }
             }
             & .text {
                 color: hsl(238, 22%, 44%);
@@ -68,9 +82,15 @@
                 @include tablets {
                     margin-bottom: 25px;
                 }
-                @include small-desktops {
+                @include desktops {
                     color: $main-color;
                     width: 78.78%;
+                    max-width: 520px;
+                }
+                @include large-desktops {
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                    margin: 12px 0;
                 }
             }
             &__link {
@@ -78,14 +98,14 @@
                 align-items: flex-end;
                 border-bottom: 1px $link-clr solid; /* Bottom border */
                 padding-bottom: 5px; /* Space between text and bottom border */
-                width: fit-content; /* Border's width = text + image */
+                width: fit-content; /* Border's width = text + arrow */
                 margin: 37px auto; /* Center the div */
                 color: $link-clr;
                 cursor: pointer;
                 @include tablets {
                     margin: 45px auto;
                 }
-                @include small-desktops {
+                @include desktops {
                     margin: 0; /* Align to the left */
                 }
                 &:hover {
@@ -98,12 +118,18 @@
                     @include tablets {
                         font-size: 1.4rem;
                     }
+                    @include large-desktops {
+                        font-size: 1.6rem;
+                    }
                 }
                 &__arrow {
                     width: 16px;
                     height: auto;
                     @include tablets {
                         width: 18px;
+                    }
+                    @include large-desktops {
+                        width: 22px;
                     }
                 }
             }
@@ -118,14 +144,19 @@
                 padding: 28px 33px 30px;
                 margin: 56px 30px 0;
             }
-            @include small-desktops {
+            @include desktops {
                 margin: 40px 0 0;
-                width: 54.54%;
+                width: 42%;
+                max-width: 360px;
+            }
+            @include large-desktops {
+                padding: 20px 30px 25px;
+                margin: 45px 0;
             }
             &__quotes {
                 width: 14px;
                 height: auto;
-                @include tablets {
+                @include min-tablets {
                     width: 16px;
                 }
             }
@@ -138,6 +169,11 @@
                     margin-top: 2.8px;
                     line-height: 2.1rem;
                 }
+                @include large-desktops {
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    margin: 5px 0 20px;
+                }
             }
             &__person {
                 display: flex;
@@ -148,6 +184,9 @@
                     float: left;
                     @include tablets {
                         width: 29px;
+                    }
+                    @include desktops {
+                        width: 32px;
                     }
                 }
                 &__infos {
@@ -162,12 +201,18 @@
                         @include tablets {
                             margin-bottom: 3px;
                         }
+                        @include large-desktops {
+                            font-size: 1.2rem;
+                        }
                     }
                     & #profession {
                         margin: 0;
                         font-size: 0.7rem;
                         @include tablets {
                             font-size: 0.8rem;
+                        }
+                        @include large-desktops {
+                            font-size: 0.9rem;
                         }
                     }
                 }        

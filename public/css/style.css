@@ -87,6 +87,12 @@ body {
     font-size: 1.17rem;
   }
 }
+@media (min-width: 1200px) {
+  .register__input input:not(:focus):invalid ~ span {
+    font-size: 1.6rem;
+    margin-top: 5px;
+  }
+}
 .register__input span {
   display: none;
   /* Hide the error message */
@@ -121,6 +127,7 @@ body {
     margin: 0;
     /* Align the input with the button */
     height: 43px;
+    font-size: 1.6rem;
   }
 }
 
@@ -182,6 +189,7 @@ body {
     height: 45px;
     width: 37%;
     max-width: 200px;
+    font-size: 1.4rem;
   }
 }
 .register__button:hover {
@@ -471,6 +479,7 @@ footer .attribution {
     margin: 75px 0 0;
     font-size: 4rem;
     line-height: 6rem;
+    text-align: left;
   }
 }
 #presentation__text p {
@@ -530,16 +539,25 @@ footer .attribution {
     padding: 130px 55px 112px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #description {
-    background: utl("../../images/bg-curve-desktop.svg") no repeat;
+    background: url("../../images/bg-curve-desktop.svg") no repeat;
     background-size: 400% 100%;
     /* width height */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description {
     padding: 130px 77px 112px;
+  }
+}
+@media (min-width: 1200px) {
+  #description {
+    padding: 180px 77px 60px;
   }
 }
 #description__image {
@@ -557,9 +575,16 @@ footer .attribution {
     max-width: 750px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #description__image {
-    width: 43.13%;
+    width: 42.18%;
+    max-width: 540px;
+  }
+}
+@media (min-width: 1200px) {
+  #description__image {
+    margin-top: 30px;
+    /* Align vertically the illustration with the text */
   }
 }
 #description__image img {
@@ -576,9 +601,10 @@ footer .attribution {
     max-width: 750px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #description__block {
-    width: 51.76%;
+    width: 58.87%;
+    max-width: 730px;
   }
 }
 #description__block__text h2 {
@@ -601,6 +627,14 @@ footer .attribution {
     text-align: left;
   }
 }
+@media (min-width: 1200px) {
+  #description__block__text h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: left;
+    margin: 0 0 30px;
+  }
+}
 #description__block__text .text {
   color: #585989;
   line-height: 2rem;
@@ -611,10 +645,18 @@ footer .attribution {
     margin-bottom: 25px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #description__block__text .text {
     color: #070439;
     width: 78.78%;
+    max-width: 520px;
+  }
+}
+@media (min-width: 1200px) {
+  #description__block__text .text {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 12px 0;
   }
 }
 #description__block__text__link {
@@ -625,7 +667,7 @@ footer .attribution {
   padding-bottom: 5px;
   /* Space between text and bottom border */
   width: fit-content;
-  /* Border's width = text + image */
+  /* Border's width = text + arrow */
   margin: 37px auto;
   /* Center the div */
   color: #3c9f8f;
@@ -636,7 +678,7 @@ footer .attribution {
     margin: 45px auto;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #description__block__text__link {
     margin: 0;
     /* Align to the left */
@@ -655,6 +697,11 @@ footer .attribution {
     font-size: 1.4rem;
   }
 }
+@media (min-width: 1200px) {
+  #description__block__text__link p {
+    font-size: 1.6rem;
+  }
+}
 #description__block__text__link__arrow {
   width: 16px;
   height: auto;
@@ -662,6 +709,11 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #description__block__text__link__arrow {
     width: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  #description__block__text__link__arrow {
+    width: 22px;
   }
 }
 #description__block__review {
@@ -677,17 +729,24 @@ footer .attribution {
     margin: 56px 30px 0;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #description__block__review {
     margin: 40px 0 0;
-    width: 54.54%;
+    width: 42%;
+    max-width: 360px;
+  }
+}
+@media (min-width: 1200px) {
+  #description__block__review {
+    padding: 20px 30px 25px;
+    margin: 45px 0;
   }
 }
 #description__block__review__quotes {
   width: 14px;
   height: auto;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #description__block__review__quotes {
     width: 16px;
   }
@@ -704,6 +763,13 @@ footer .attribution {
     line-height: 2.1rem;
   }
 }
+@media (min-width: 1200px) {
+  #description__block__review__text {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 5px 0 20px;
+  }
+}
 #description__block__review__person {
   display: flex;
   align-items: center;
@@ -716,6 +782,11 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #description__block__review__person img {
     width: 29px;
+  }
+}
+@media (min-width: 992px) {
+  #description__block__review__person img {
+    width: 32px;
   }
 }
 #description__block__review__person__infos {
@@ -736,6 +807,11 @@ footer .attribution {
     margin-bottom: 3px;
   }
 }
+@media (min-width: 1200px) {
+  #description__block__review__person__infos #name {
+    font-size: 1.2rem;
+  }
+}
 #description__block__review__person__infos #profession {
   margin: 0;
   font-size: 0.7rem;
@@ -743,6 +819,11 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #description__block__review__person__infos #profession {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #description__block__review__person__infos #profession {
+    font-size: 0.9rem;
   }
 }
 

@@ -67,7 +67,8 @@
         margin: 0 35px;
     }
     @include desktops {
-        width: 38%; /* Input and button width */
+        width: 39%; /* Input and button width */
+        max-width: 480px;
     }
     & input {
         border: none;

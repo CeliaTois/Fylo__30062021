@@ -33,7 +33,7 @@
             max-width: $tablets-max-width;
         }
         @include desktops {
-            width: 42.18%;
+            width: 41%;
             max-width: 540px;
         }
         @include large-desktops {
@@ -52,8 +52,8 @@
             max-width: $tablets-max-width;
         }
         @include desktops {
-            width: 58.87%;
-            max-width: 730px;
+            width: 59%;
+            max-width: 740px;
         }
         &__text {
             & h2 {

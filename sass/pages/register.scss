@@ -25,15 +25,15 @@
         @include desktops {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
         }
         &__text {
             text-align: center;
             @include desktops {
                 text-align: left;
-                width: 41.93%;
-                max-width: 520px;
+                width: 61%;
+                max-width: 760px;
 
             }
             & h2 {
@@ -57,9 +57,11 @@
                     line-height: map-get($map: $p-height, $key: tablet);
                     margin: 28px 0 10px;
                 }
-                @include large-desktops {
+                @include desktops {
                     font-size: 1.7rem;
                     line-height: 2.5rem;
+                    width: 68%;
+                    max-width: 520px;
                 }
             }
         }

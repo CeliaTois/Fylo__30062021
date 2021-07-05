@@ -36,7 +36,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -142,8 +142,9 @@ body {
 }
 @media (min-width: 992px) {
   #register__block__input {
-    width: 38%;
+    width: 39%;
     /* Input and button width */
+    max-width: 480px;
   }
 }
 #register__block__input input {
@@ -226,7 +227,8 @@ body {
 }
 @media (min-width: 992px) {
   #register__block__input button {
-    width: 200px;
+    width: 42%;
+    min-width: 200px;
     height: 48px;
     font-size: 1.4rem;
   }
@@ -350,6 +352,7 @@ footer > div {
 @media (min-width: 768px) {
   footer #contact {
     width: 34.37%;
+    max-width: 500px;
   }
 }
 footer #contact__phone {
@@ -363,6 +366,7 @@ footer #contact img {
 }
 footer .footer-menu {
   width: 21.09%;
+  max-width: 300px;
 }
 footer ul {
   padding: 0;
@@ -434,7 +438,7 @@ footer .attribution {
   #presentation {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 }
@@ -483,7 +487,7 @@ footer .attribution {
 @media (min-width: 992px) {
   #presentation__text {
     width: 50%;
-    max-width: 590px;
+    max-width: 640px;
     text-align: left;
   }
 }
@@ -581,7 +585,7 @@ footer .attribution {
     /* width height */
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 }
@@ -612,7 +616,7 @@ footer .attribution {
 }
 @media (min-width: 992px) {
   #description__image {
-    width: 42.18%;
+    width: 41%;
     max-width: 540px;
   }
 }
@@ -638,8 +642,8 @@ footer .attribution {
 }
 @media (min-width: 992px) {
   #description__block {
-    width: 58.87%;
-    max-width: 730px;
+    width: 59%;
+    max-width: 740px;
   }
 }
 #description__block__text h2 {
@@ -900,7 +904,7 @@ footer .attribution {
   #register__block {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -910,8 +914,8 @@ footer .attribution {
 @media (min-width: 992px) {
   #register__block__text {
     text-align: left;
-    width: 41.93%;
-    max-width: 520px;
+    width: 61%;
+    max-width: 760px;
   }
 }
 #register__block__text h2 {
@@ -944,10 +948,12 @@ footer .attribution {
     margin: 28px 0 10px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #register__block__text p {
     font-size: 1.7rem;
     line-height: 2.5rem;
+    width: 68%;
+    max-width: 520px;
   }
 }
 

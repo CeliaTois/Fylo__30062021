@@ -66,8 +66,8 @@
     @include tablets {
         margin: 0 35px;
     }
-    @include small-desktops {
-        width: 38.7%; /* Input and button width */
+    @include desktops {
+        width: 38%; /* Input and button width */
     }
     & input {
         border: none;
@@ -83,9 +83,19 @@
             font-size: map-get($map: $register-input, $key: tablet);
             height: 35px;
         }
+        @include desktops {
+            height: 45px;
+            margin-bottom: 16px;
+            padding-left: 20px;
+            font-size: 1.3rem;
+        }
         &:not(:focus):invalid {
             & ~span {
                 color: #FFF;
+                @include large-desktops {
+                    margin: -10px 0 12px;
+                    font-size: 1.2rem;
+                }
             }
         }
     }

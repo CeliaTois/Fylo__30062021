@@ -140,9 +140,9 @@ body {
     margin: 0 35px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #register__block__input {
-    width: 38.7%;
+    width: 38%;
     /* Input and button width */
   }
 }
@@ -163,8 +163,22 @@ body {
     height: 35px;
   }
 }
+@media (min-width: 992px) {
+  #register__block__input input {
+    height: 45px;
+    margin-bottom: 16px;
+    padding-left: 20px;
+    font-size: 1.3rem;
+  }
+}
 #register__block__input input:not(:focus):invalid ~ span {
   color: #FFF;
+}
+@media (min-width: 1200px) {
+  #register__block__input input:not(:focus):invalid ~ span {
+    margin: -10px 0 12px;
+    font-size: 1.2rem;
+  }
 }
 
 /* Button */
@@ -210,9 +224,11 @@ body {
     height: 37px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #register__block__input button {
-    width: 42.7%;
+    width: 200px;
+    height: 48px;
+    font-size: 1.4rem;
   }
 }
 
@@ -298,8 +314,18 @@ footer {
     font-size: 1.75rem;
   }
 }
+@media (min-width: 1200px) {
+  footer {
+    padding: 105px 77px 40px;
+  }
+}
 footer #footer-logo {
   width: 166px;
+}
+@media (min-width: 1200px) {
+  footer #footer-logo {
+    width: 180px;
+  }
 }
 footer > div {
   margin-top: 37px;
@@ -309,7 +335,16 @@ footer > div {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer > div {
     margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  footer > div {
+    margin-top: 5px;
   }
 }
 @media (min-width: 768px) {
@@ -846,6 +881,11 @@ footer .attribution {
     padding: 80px 77px 60px;
   }
 }
+@media (min-width: 1200px) {
+  #register {
+    padding: 110px 95px 75px 77px;
+  }
+}
 @media (min-width: 577px) and (max-width: 767px) {
   #register__block {
     max-width: 550px;
@@ -856,20 +896,22 @@ footer .attribution {
     max-width: 750px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #register__block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
 }
 #register__block__text {
   text-align: center;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #register__block__text {
     text-align: left;
     width: 41.93%;
+    max-width: 520px;
   }
 }
 #register__block__text h2 {
@@ -887,6 +929,11 @@ footer .attribution {
     font-size: 2.5rem;
   }
 }
+@media (min-width: 1200px) {
+  #register__block__text h2 {
+    font-size: 3rem;
+  }
+}
 #register__block__text p {
   line-height: 2rem;
   margin: 20px 0 7px;
@@ -895,6 +942,12 @@ footer .attribution {
   #register__block__text p {
     line-height: 2.3rem;
     margin: 28px 0 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #register__block__text p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
   }
 }
 

@@ -8,8 +8,14 @@ footer {
         padding: 91px map-get($map: $margin-tablet, $key: footer) 42px;
         font-size: 1.75rem;
     }
+    @include large-desktops {
+        padding: 105px map-get($map: $margin-desktop, $key: body) 40px;
+    }
     & #footer-logo {
         width: 166px;
+        @include large-desktops {
+            width: 180px;
+        }
     }
     &>div {
         margin-top: 37px;
@@ -17,7 +23,12 @@ footer {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+        }
+        @include tablets {
             margin-top: 20px;
+        }
+        @include desktops {
+            margin-top: 5px;
         }
     }
     & #contact {

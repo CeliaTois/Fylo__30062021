@@ -35,8 +35,10 @@
             font-size: map-get($map: $register-input, $key: tablet);
             height: 37px;
         }
-        @include small-desktops {
-            width: 42.7%;
+        @include desktops {
+            width: 200px;
+            height: 48px;
+            font-size: 1.4rem;
         }
     }
 }

@@ -13,14 +13,17 @@ footer {
     }
     &>div {
         margin-top: 37px;
-        @include  tablets {
+        @include  min-tablets {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
             margin-top: 20px;
         }
     }
     & #contact {
+        @include min-tablets {
+            width: 34.37%;
+        }
         &__phone {
             margin-bottom: 20px;
         }
@@ -30,6 +33,9 @@ footer {
         & img {
                 margin-right: 20px;
         }
+    }
+    & .footer-menu {
+        width: 21.09%;
     }
     & ul {
         padding: 0;

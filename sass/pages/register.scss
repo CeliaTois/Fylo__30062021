@@ -9,6 +9,9 @@
     @include tablets {
         padding: 76px 63px 98px;
     }
+    @include small-desktops {
+        padding: 80px map-get($map: $margin-desktop, $key: body) 60px;
+    }
     &__block {
         @include small-devices {
             max-width: $sm-devices-max-width;
@@ -16,14 +19,26 @@
         @include tablets {
             max-width: $tablets-max-width;
         }
+        @include small-desktops {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
         &__text {
             text-align: center;
+            @include small-desktops {
+                text-align: left;
+                width: 41.93%;
+            }
             & h2 {
                 margin : 0;
                 font-family: $h2-font;
                 font-size: 1.8rem;
                 @include tablets {
                     font-size: 2.1rem;
+                }
+                @include small-desktops {
+                    font-size: map-get($map: $h1-size, $key: small-desktop);
                 }
             }
             & p {

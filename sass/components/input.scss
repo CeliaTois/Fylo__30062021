@@ -31,11 +31,12 @@
 
 /* Input : Presention */
 #presentation__text__register {
-    @include small-desktops {
-        width: 85%; /* Input and button width */
-    }
     &__input {
         margin-left: 2px; /* Small shift with the button */
+        @include large-desktops {
+            width: 59.26%;
+            max-width: 320px;
+        }
         & input {
             border: 1px $main-color solid;
             border-radius: $border-radius;
@@ -46,6 +47,10 @@
                 font-size: 1.4rem;
                 height: map-get($map: $input-height, $key: tablet);
             }
+            @include large-desktops {
+                margin: 0; /* Align the input with the button */
+                height: map-get($map: $input-height, $key: desktop);
+            }
         }
     }
 }
@@ -55,6 +60,9 @@
     margin: 0 25px;
     @include tablets {
         margin: 0 35px;
+    }
+    @include small-desktops {
+        width: 38.7%; /* Input and button width */
     }
     & input {
         border: none;

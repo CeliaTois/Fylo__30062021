@@ -12,6 +12,11 @@
     @include tablets {
         height: map-get($map: $btn-height, $key: tablet);
     }
+    @include large-desktops {
+        height: 45px;
+        width: 37%;
+        max-width: 200px;
+    }
     &:hover {
         background-color: $btn-background-hover;
     }
@@ -28,6 +33,9 @@
         @include tablets {
             font-size: map-get($map: $register-input, $key: tablet);
             height: 37px;
+        }
+        @include small-desktops {
+            width: 42.7%;
         }
     }
 }

@@ -8,12 +8,14 @@ $btn-font: Raleway-Bold;
 
 /* Font-size */
 $register-input: (mobile: 1rem, tablet: 1.17rem);
+$h1-size: (mobile: 2.3rem, small-desktop: 2.5rem, large-desktop: 4rem);
 
 /* Margins & Paddings */
 $margin-phone: (body: 25px, presentation: 35px, footer: 45px);
 $margin-small-devices: 40px;
 $margin-tablet: (body: 55px, presentation: 77px, footer: 63px);
-$margin-small-desktop: (body: 77px);
+$margin-desktop: (body: 77px);
+$margin-large-desktop: (body: 110px);
 
 /* Colors */
 $main-color: hsl(243, 87%, 12%);
@@ -31,9 +33,10 @@ $register-shadow: hsl(240, 18%, 41%);
 $border-radius: 3px;
 
 /* Height */
-$input-height: (mobile: 36px, tablet: 42px, desktop: 60px);
+$input-height: (mobile: 36px, tablet: 42px, desktop: 43px);
 $btn-height: (mobile: 40px, tablet: 46px);
 $p-height: (mobile: 2rem, tablet: 2.3rem);
+$h1-height: (large-desktop: 6rem);
 
 /* Width */
 $sm-devices-max-width: 550px;

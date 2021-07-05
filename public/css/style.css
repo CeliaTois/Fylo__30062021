@@ -8,8 +8,12 @@
 /* Width */
 /* Landscapes phones */
 /* Medium devices : Tablets */
-/* Large devices : Desktops */
+/* Large devices : Small-desktops */
+/* Large devices : Large-desktops */
+/* Desktops - small and large */
+/* Tablets minimun */
 /* Desktops sections' position */
+/* Large desktops titles */
 html {
   font-size: 62.5%;
 }
@@ -28,6 +32,11 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   body {
     font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.8rem;
   }
 }
 
@@ -84,15 +93,15 @@ body {
 }
 
 /* Input : Presention */
-@media (min-width: 992px) and (max-width: 1199px) {
-  #presentation__text__register {
-    width: 85%;
-    /* Input and button width */
-  }
-}
 #presentation__text__register__input {
   margin-left: 2px;
   /* Small shift with the button */
+}
+@media (min-width: 1200px) {
+  #presentation__text__register__input {
+    width: 59.26%;
+    max-width: 320px;
+  }
 }
 #presentation__text__register__input input {
   border: 1px #070439 solid;
@@ -107,6 +116,13 @@ body {
     height: 42px;
   }
 }
+@media (min-width: 1200px) {
+  #presentation__text__register__input input {
+    margin: 0;
+    /* Align the input with the button */
+    height: 43px;
+  }
+}
 
 /* Input : Register */
 #register__block__input {
@@ -115,6 +131,12 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   #register__block__input {
     margin: 0 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #register__block__input {
+    width: 38.7%;
+    /* Input and button width */
   }
 }
 #register__block__input input {
@@ -155,6 +177,13 @@ body {
     height: 46px;
   }
 }
+@media (min-width: 1200px) {
+  .register__button {
+    height: 45px;
+    width: 37%;
+    max-width: 200px;
+  }
+}
 .register__button:hover {
   background-color: #6B9BFF;
 }
@@ -171,6 +200,11 @@ body {
   #register__block__input button {
     font-size: 1.17rem;
     height: 37px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #register__block__input button {
+    width: 42.7%;
   }
 }
 
@@ -191,9 +225,9 @@ header {
     margin: 55px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   header {
-    margin: 77px;
+    margin: 60px 77px;
   }
 }
 header #logo img {
@@ -204,9 +238,9 @@ header #logo img {
     width: 110px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   header #logo img {
-    width: 150px;
+    width: 170px;
   }
 }
 
@@ -223,7 +257,7 @@ nav ul {
     font-size: 1.4rem;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   nav ul {
     font-size: 1.6rem;
   }
@@ -237,7 +271,7 @@ nav ul li {
     margin-left: 45px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   nav ul li {
     margin-left: 60px;
   }
@@ -262,12 +296,17 @@ footer #footer-logo {
 footer > div {
   margin-top: 37px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   footer > div {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  footer #contact {
+    width: 34.37%;
   }
 }
 footer #contact__phone {
@@ -278,6 +317,9 @@ footer #contact__email {
 }
 footer #contact img {
   margin-right: 20px;
+}
+footer .footer-menu {
+  width: 21.09%;
 }
 footer ul {
   padding: 0;
@@ -345,12 +387,17 @@ footer .attribution {
     text-align: center;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #presentation {
-    margin: 20px 77px 150px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 992px) {
+  #presentation {
+    margin: 85px 77px 150px;
   }
 }
 #presentation__image {
@@ -367,9 +414,10 @@ footer .attribution {
     max-width: 750px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #presentation__image {
-    width: 44.27%;
+    width: 50%;
+    max-width: 640px;
   }
 }
 #presentation__image img {
@@ -389,9 +437,10 @@ footer .attribution {
     max-width: 750px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #presentation__text {
-    width: 41.67%;
+    width: 50%;
+    max-width: 590px;
     text-align: left;
   }
 }
@@ -407,9 +456,21 @@ footer .attribution {
     margin-top: 50px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #presentation__text h1 {
     font-family: Raleway-Bold;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #presentation__text h1 {
+    margin: 75px 0 0;
+    font-size: 4rem;
+    line-height: 6rem;
   }
 }
 #presentation__text p {
@@ -420,9 +481,36 @@ footer .attribution {
     line-height: 2.3rem;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__text p {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  #presentation__text p {
+    line-height: 2.5rem;
+    margin: 12px 0 7px;
+  }
+}
 #presentation__text .register {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #presentation__text .register {
+    width: 85%;
+    /* Input and button width */
+  }
+}
+@media (min-width: 1200px) {
+  #presentation__text .register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 91.52%;
+    max-width: 540px;
+  }
 }
 
 /* Section 2 : Description */
@@ -449,7 +537,8 @@ footer .attribution {
     /* width height */
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 130px 77px 112px;
   }
 }
@@ -470,7 +559,7 @@ footer .attribution {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #description__image {
-    width: 37.76%;
+    width: 43.13%;
   }
 }
 #description__image img {
@@ -489,7 +578,7 @@ footer .attribution {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   #description__block {
-    width: 36.46%;
+    width: 51.76%;
   }
 }
 #description__block__text h2 {
@@ -504,6 +593,14 @@ footer .attribution {
     margin: 119px 0 38px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description__block__text h2 {
+    margin: 0 0 30px;
+    /* Space between h2 and p */
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}
 #description__block__text .text {
   color: #585989;
   line-height: 2rem;
@@ -512,6 +609,12 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #description__block__text .text {
     margin-bottom: 25px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description__block__text .text {
+    color: #070439;
+    width: 78.78%;
   }
 }
 #description__block__text__link {
@@ -531,6 +634,12 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #description__block__text__link {
     margin: 45px auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description__block__text__link {
+    margin: 0;
+    /* Align to the left */
   }
 }
 #description__block__text__link:hover {
@@ -566,6 +675,12 @@ footer .attribution {
   #description__block__review {
     padding: 28px 33px 30px;
     margin: 56px 30px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #description__block__review {
+    margin: 40px 0 0;
+    width: 54.54%;
   }
 }
 #description__block__review__quotes {
@@ -645,6 +760,11 @@ footer .attribution {
     padding: 76px 63px 98px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #register {
+    padding: 80px 77px 60px;
+  }
+}
 @media (min-width: 577px) and (max-width: 767px) {
   #register__block {
     max-width: 550px;
@@ -655,8 +775,21 @@ footer .attribution {
     max-width: 750px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #register__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 #register__block__text {
   text-align: center;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #register__block__text {
+    text-align: left;
+    width: 41.93%;
+  }
 }
 #register__block__text h2 {
   margin: 0;
@@ -666,6 +799,11 @@ footer .attribution {
 @media (min-width: 768px) and (max-width: 991px) {
   #register__block__text h2 {
     font-size: 2.1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #register__block__text h2 {
+    font-size: 2.5rem;
   }
 }
 #register__block__text p {

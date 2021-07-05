@@ -10,8 +10,8 @@ header {
     @include tablets {
         margin: map-get($map: $margin-tablet, $key: body);
     }
-    @include small-desktops {
-        margin: map-get($map: $margin-small-desktop, $key: body);
+    @include desktops {
+        margin: 60px map-get($map: $margin-desktop, $key: body);
     }
     & #logo {
         & img {
@@ -19,8 +19,8 @@ header {
             @include tablets {
                 width: 110px;
             }
-            @include small-desktops {
-                width: 150px;
+            @include desktops {
+                width: 170px;
             }
         }
     }
@@ -37,7 +37,7 @@ nav {
         @include tablets {
             font-size: 1.4rem;
         }
-        @include small-desktops {
+        @include desktops {
             font-size: 1.6rem;
         }
         & li {
@@ -46,7 +46,7 @@ nav {
             @include tablets {
                 margin-left: 45px;
             }
-            @include small-desktops {
+            @include desktops {
                 margin-left: 60px;
             }
         }

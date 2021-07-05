@@ -15,7 +15,7 @@
         background: utl("../../images/bg-curve-desktop.svg") no repeat;
         background-size: 400% 100%; /* width height */
         @include section-position;
-        padding: 130px map-get($map: $margin-small-desktop, $key: body) 112px;
+        padding: 130px map-get($map: $margin-desktop, $key: body) 112px;
     }
     &__image {
         text-align: center;
@@ -28,7 +28,7 @@
             max-width: $tablets-max-width;
         }
         @include small-desktops {
-            width: 37.76%;
+            width: 43.13%;
         }
         & img {
             width: 100%;
@@ -43,7 +43,7 @@
             max-width: $tablets-max-width;
         }
         @include small-desktops {
-            width: 36.46%;
+            width: 51.76%;
         }
         &__text {
             & h2 {
@@ -55,6 +55,11 @@
                     font-size: 1.75rem;
                     margin: 119px 0 38px;
                 }
+                @include small-desktops {
+                    margin: 0 0 30px; /* Space between h2 and p */
+                    font-size: map-get($map: $h1-size, $key: small-desktop);
+                    text-align: left;
+                }
             }
             & .text {
                 color: hsl(238, 22%, 44%);
@@ -62,6 +67,10 @@
                 margin-bottom: 18px;
                 @include tablets {
                     margin-bottom: 25px;
+                }
+                @include small-desktops {
+                    color: $main-color;
+                    width: 78.78%;
                 }
             }
             &__link {
@@ -75,6 +84,9 @@
                 cursor: pointer;
                 @include tablets {
                     margin: 45px auto;
+                }
+                @include small-desktops {
+                    margin: 0; /* Align to the left */
                 }
                 &:hover {
                     color: $link-clr-hover;
@@ -105,6 +117,10 @@
             @include tablets {
                 padding: 28px 33px 30px;
                 margin: 56px 30px 0;
+            }
+            @include small-desktops {
+                margin: 40px 0 0;
+                width: 54.54%;
             }
             &__quotes {
                 width: 14px;

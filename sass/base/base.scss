@@ -15,4 +15,7 @@ body {
     @include tablets {
         font-size: 1.6rem;
     }
+    @include large-desktops {
+        font-size: 1.8rem;
+    }
 }

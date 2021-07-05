@@ -12,10 +12,32 @@
     }
 }
 
-/* Large devices : Desktops */
+/* Large devices : Small-desktops */
 @mixin small-desktops {
     @media (min-width: 992px) and (max-width: 1199px) {
         @content;
+    }    
+}
+
+/* Large devices : Large-desktops */
+@mixin large-desktops {
+    @media (min-width: 1200px) {
+        @content;
+    }
+    
+}
+
+/* Desktops - small and large */
+@mixin desktops {
+    @media (min-width: 992px) {
+        @content;
+    }    
+}
+
+/* Tablets minimun */
+@mixin min-tablets {
+    @media (min-width: 768px) {
+        @content;   
     }    
 }
 
@@ -23,5 +45,12 @@
 @mixin section-position {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Large desktops titles */
+@mixin desktop-titles {
+    font-size: map-get($map: $h1-size, $key: large-desktop);
+    line-height: map-get($map: $h1-height, $key: large-desktop);
 }

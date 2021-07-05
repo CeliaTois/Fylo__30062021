@@ -9,9 +9,11 @@
         margin: 120px map-get($map: $margin-tablet, $key: presentation);
         text-align: center;
     }
-    @include small-desktops {
-        margin: 20px map-get($map: $margin-small-desktop, $key: body) 150px;
+    @include desktops {
         @include section-position;
+    }
+    @include desktops {
+        margin: 85px map-get($map: $margin-desktop, $key: body) 150px;
     }
     &__image {
         width: 100%;
@@ -22,8 +24,9 @@
             width: $tablets-width;
             max-width: $tablets-max-width;
         }
-        @include small-desktops {
-            width: 44.27%;
+        @include desktops {
+            width: 50%;
+            max-width: 640px;
         }
         & img {
             width: 100%;
@@ -38,21 +41,29 @@
             width: $tablets-width;
             max-width: $tablets-max-width;
         }
-        @include small-desktops {
-            width: 41.67%;
+        @include desktops {
+            width: 50%;
+            max-width: 590px;
             text-align: left;
         }
         & h1 {
             font-family: map-get($map: $h1-font, $key: phone);
-            font-size: 2.3rem;
+            font-size: map-get($map: $h1-size, $key: mobile);
             margin-top: 36px;
             line-height: 3.6rem;
             @include tablets {
                 font-size: 2.7rem;
                 margin-top: 50px;
             }
-            @include small-desktops {
+            @include desktops {
                 font-family: $h2-font;
+            }
+            @include small-desktops {
+                font-size: map-get($map: $h1-size, $key: small-desktop);
+            }
+            @include large-desktops {
+                margin: 75px 0 0;
+                @include desktop-titles;
             }
         }
         & p {
@@ -60,10 +71,28 @@
             @include tablets {
                 line-height: map-get($map: $p-height, $key: tablet);
             }
+            @include small-desktops {
+                max-width: 450px;
+            }
+            @include large-desktops {
+                line-height: 2.5rem;
+                margin: 12px 0 7px;
+            }
         }
         & .register {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
+            @include small-desktops {
+                width: 85%; /* Input and button width */
+            }
+            @include large-desktops {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 25px;
+                width: 91.52%;
+                max-width: 540px;
+            }
         }               
     }
 }

@@ -12,6 +12,5 @@ The goal of this challenge was to reproduce the given design making sure that th
   ```
 - To run the project, open the HTML file in your web browser.
 
-
-
+## Project
 ![Screenshot 2023-10-21 at 12-17-58 Fylo](https://github.com/celia-tois/fylo-landing-page/assets/90208365/6e637aff-49b9-49dc-a7f5-858dcfaba420)
